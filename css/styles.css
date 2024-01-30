@@ -1,0 +1,331 @@
+/* Reset General*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* Hedear */
+
+.encabezado {
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    flex-wrap: wrap;    
+}
+
+.imgLogo {
+    height: 80px;
+    width: 160px;
+}
+/* Nav Bar*/
+
+.list {
+    display: flex;
+    gap: 5rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.listItem  {
+    background-color: brown;
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: monospace;
+    border-bottom: 3px solid brown;
+    transition: all 0.5s ease;
+    margin: 1rem;
+}
+
+.listItem:hover  {
+    border-color: black;
+}
+
+/* Main Index */
+
+.titulo {
+    background-color: brown;
+    color: black;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-family: monospace;
+    width: auto;
+    margin: 2% 0;
+    text-align: center;
+}
+
+@media screen and (max-width:500px) {
+    .titulo {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .seccionCont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 960px;
+        margin: 3rem auto;
+        padding: 0 1.5rem;
+        flex-direction: column;
+    }
+}
+
+.seccionCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 960px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.parrafoUno {
+    color: brown;
+    font-size: 2.3rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2% 2% 2% 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgPrincipal {
+    margin: 2rem;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Main escuchar */
+
+.escucharUno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.tituloDos {
+    color: brown;
+    font-size: 3.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+}
+
+.escucharDos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto 15%;
+}
+
+@media screen and (max-width:700px) {
+    .escucharDos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto 15%;
+    }
+}
+
+/* Main Galería */
+
+.iframe {
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeriaUno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 15%;
+    flex-wrap: wrap;
+}
+
+.imgGaleria {
+    height: 20rem;
+    width: 30rem;
+    margin: 2%;
+}
+
+/* Main Merch */
+
+.gizzverse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 15%;
+}
+
+.imgGizzverse {
+    max-width: 50rem;
+    transition: all 0.5s ease;
+}
+
+.imgGizzverse:hover {
+    max-width: 53rem;
+}
+
+.merchCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 15%;
+    flex-wrap: wrap;
+}
+
+.imgVinil {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 10%;
+    margin: 2rem;
+    transition: all 0.5s ease;
+}
+
+.imgVinil:hover {
+height: 27rem;
+width: 27rem;
+}
+
+.imgRopa {
+    height: 35rem;
+    width: 25rem;
+    border-radius: 10%;
+    margin: 2rem;
+    transition: all 0.5s ease;
+}
+
+.imgRopa:hover {
+    height:37rem;
+    width: 27rem;
+}
+
+/* Main Tour */
+
+.tourCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 15%;
+}
+
+.imgTour {
+    max-width: 90rem;
+    margin: 2rem;
+}
+
+.fechasCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.fechasTour {
+    color: brown;
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2rem;
+    text-align: center;
+}
+
+.tickets {
+    background-color: #66b814;
+    color: black;
+    font-size: 3rem;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 2rem;
+    padding: .5rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: brown;
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25rem;
+}
+.boxFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+    gap: 25%;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.parrafoFooter {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+    transition: all 0.5s ease;
+}
+
+.logo:hover {
+    width: 5rem;
+    height: 5rem;
+}
+
