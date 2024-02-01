@@ -40,26 +40,37 @@ img {
     flex-wrap: wrap;    
 }
 
+.navbarStyle {
+    display: flex;
+    justify-content: end;
+}
+
+.imgCont {
+    width: 17%;
+    display: flex;
+}
+
 .imgLogo {
-    height: 80px;
-    width: 160px;
+    height: 100%;
+    width: 100%;
 }
 /* Nav Bar*/
 
 .list {
     display: flex;
     gap: 5rem;
-    padding: 1rem;
+    padding: .5rem;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .listItem  {
+    display: flex;
     background-color: brown;
     color: black;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    font-family: monospace;
+    font-family: sans-serif;
     border-bottom: 3px solid brown;
     transition: all 0.5s ease;
     margin: 1rem;
@@ -74,17 +85,34 @@ img {
 .titulo {
     background-color: brown;
     color: black;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: bold;
     font-family: monospace;
     width: auto;
-    margin: 2% 0;
+    margin: 9.5rem 0 0 0;
     text-align: center;
 }
 
-@media screen and (max-width:500px) {
+.tituloAlt {
+    background-color: brown;
+    color: black;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: monospace;
+    width: auto;
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+}
+
+@media screen and (max-width:700px) {
     .titulo {
-        font-size: 3.5rem;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .tituloAlt {
+        font-size: 3rem;
     }
 }
 
@@ -111,7 +139,7 @@ img {
 
 .parrafoUno {
     color: brown;
-    font-size: 2.3rem;
+    font-size: 200%;
     font-family: 'Times New Roman', Times, serif;
     margin: 2% 2% 2% 2%;
     display: flex;
@@ -208,34 +236,38 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto 15%;
+    margin: auto 10%;
     flex-wrap: wrap;
 }
 
 .imgVinil {
-    height: 25rem;
-    width: 25rem;
+    height: 27rem;
+    width: 27rem;
     border-radius: 10%;
     margin: 2rem;
     transition: all 0.5s ease;
+    border: 5px solid black;
 }
 
 .imgVinil:hover {
-height: 27rem;
-width: 27rem;
+height: 28rem;
+width: 28rem;
+border-color: brown;
 }
 
 .imgRopa {
     height: 35rem;
-    width: 25rem;
+    width: 27rem;
     border-radius: 10%;
     margin: 2rem;
     transition: all 0.5s ease;
+    border: solid 5px black;
 }
 
 .imgRopa:hover {
-    height:37rem;
-    width: 27rem;
+    height:38rem;
+    width: 28rem;
+    border-color: brown;
 }
 
 /* Main Tour */
@@ -244,12 +276,12 @@ width: 27rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto 15%;
+    margin: auto;
 }
 
 .imgTour {
-    max-width: 90rem;
-    margin: 2rem;
+    max-width: 150rem;
+    margin: 10rem 0 0 0;
 }
 
 .fechasCont {
@@ -261,7 +293,7 @@ width: 27rem;
 }
 .fechasTour {
     color: brown;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
     margin: 2rem;
     text-align: center;
@@ -270,10 +302,10 @@ width: 27rem;
 .tickets {
     background-color: #66b814;
     color: black;
-    font-size: 3rem;
+    font-size: 1.8rem;
     text-decoration: none;
     border-radius: 15px;
-    margin: 2rem;
+    margin: 1rem;
     padding: .5rem;
 }
 
@@ -302,7 +334,7 @@ footer {
 .parrafoFooter {
     color: black;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -322,6 +354,15 @@ footer {
     height: 4rem;
     margin: 1rem;
     transition: all 0.5s ease;
+}
+
+@media screen and (max-width:500px) {
+    .logo {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin: 1rem;
+        transition: all 0.5s ease;
+    }
 }
 
 .logo:hover {
