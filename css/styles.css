@@ -89,7 +89,7 @@ img {
     font-weight: bold;
     font-family: monospace;
     width: auto;
-    margin: 9.5rem 0 0 0;
+    margin: 9.5rem 0 2rem 0;
     text-align: center;
 }
 
@@ -220,7 +220,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto 15%;
+    margin: auto 10%;
 }
 
 .imgGizzverse {
@@ -256,7 +256,7 @@ border-color: brown;
 }
 
 .imgRopa {
-    height: 35rem;
+    height: 38rem;
     width: 27rem;
     border-radius: 10%;
     margin: 2rem;
@@ -265,7 +265,7 @@ border-color: brown;
 }
 
 .imgRopa:hover {
-    height:38rem;
+    height:39rem;
     width: 28rem;
     border-color: brown;
 }
@@ -306,7 +306,20 @@ border-color: brown;
     text-decoration: none;
     border-radius: 15px;
     margin: 1rem;
-    padding: .5rem;
+    border: solid brown 3px; 
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 4rem;
+}
+
+.tickets:hover {
+    font-size: 2.8;
+    width: 8rem;
+    height: 5rem;
+    border-radius: 20px;
 }
 
 /* Footer */
@@ -356,6 +369,11 @@ footer {
     transition: all 0.5s ease;
 }
 
+.logo:hover {
+    width: 5rem;
+    height: 5rem;
+}
+
 @media screen and (max-width:500px) {
     .logo {
         width: 2.8rem;
@@ -363,10 +381,11 @@ footer {
         margin: 1rem;
         transition: all 0.5s ease;
     }
+    .logo:hover {
+        width: 3.8rem;
+        height: 3.8rem;
+    }
 }
 
-.logo:hover {
-    width: 5rem;
-    height: 5rem;
-}
+
 
