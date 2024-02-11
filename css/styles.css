@@ -1,391 +1,298 @@
-/* Reset General*/
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-ul {
-    list-style: none;
+body {
+  background-color: black;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: #000;
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    
+  width: 100%;
 }
 
-/* Hedear */
-
-.encabezado {
-    background-color: brown;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7%;
-    flex-wrap: wrap;    
+.cont-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+  background-color: #a52a2a;
+  flex-wrap: wrap;
 }
 
-.navbarStyle {
-    display: flex;
-    justify-content: end;
+.menu-style {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0;
 }
 
-.imgCont {
-    width: 17%;
-    display: flex;
+.menu-img {
+  width: 17%;
 }
 
-.imgLogo {
-    height: 100%;
-    width: 100%;
-}
-/* Nav Bar*/
-
-.list {
-    display: flex;
-    gap: 5rem;
-    padding: .5rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  padding: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.listItem  {
-    display: flex;
-    background-color: brown;
-    color: black;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: sans-serif;
-    border-bottom: 3px solid brown;
-    transition: all 0.5s ease;
-    margin: 1rem;
+.style-item {
+  background-color: #a52a2a;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-bottom: 3px solid brown;
+  transition: all 0.5s ease;
+  margin: 1rem;
 }
 
-.listItem:hover  {
-    border-color: black;
+.style-item:hover {
+  border-color: black;
 }
-
-/* Main Index */
 
 .titulo {
-    background-color: brown;
-    color: black;
-    font-size: 4rem;
-    font-weight: bold;
-    font-family: monospace;
-    width: auto;
-    margin: 9.5rem 0 2rem 0;
-    text-align: center;
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #000;
+  background-color: #a52a2a;
+  margin: 10rem 0 2rem 0;
 }
 
-.tituloAlt {
-    background-color: brown;
-    color: black;
-    font-size: 4rem;
-    font-weight: bold;
-    font-family: monospace;
-    width: auto;
-    margin: 2rem 0 2rem 0;
-    text-align: center;
+.cont-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+.cont-main-parrafo {
+  font-size: 2rem;
+  color: #a52a2a;
+  font-family: "Times New Roman", Times, serif;
+  margin: 2%;
+}
+.cont-main-img {
+  max-width: 450px;
+  margin: 2rem;
+  flex-direction: column;
 }
 
-@media screen and (max-width:700px) {
-    .titulo {
-        font-size: 3rem;
-    }
+.cont-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: #a52a2a;
+  width: 100%;
+  height: 25rem;
+  margin-top: 6rem;
 }
 
-@media screen and (max-width:700px) {
-    .tituloAlt {
-        font-size: 3rem;
-    }
+.cont-footer-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  margin: 1.5rem;
+  gap: 25%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.cont-footer-items-parrafo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: #000;
+  flex-direction: column;
+  gap: 2rem;
+}
+.cont-footer-items-redes {
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
-@media screen and (max-width:890px) {
-    .seccionCont {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 960px;
-        margin: 3rem auto;
-        padding: 0 1.5rem;
-        flex-direction: column;
-    }
+.redes-logo {
+  width: 4rem;
+  margin: 1rem;
+  transition: all 0.5s ease;
 }
 
-.seccionCont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 960px;
-    margin: 3rem auto;
-    padding: 0 1.5rem;
+.redes-logo:hover {
+  width: 5rem;
 }
 
-.parrafoUno {
-    color: brown;
-    font-size: 200%;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 2% 2% 2% 2%;
-    display: flex;
-    justify-content: center;
-}
-
-.imgPrincipal {
-    margin: 2rem;
-    max-width: 450px;
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 890px) {
+  .cont-main {
     flex-direction: column;
+  }
 }
-
-/* Main escuchar */
-
-.escucharUno {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-}
-
-.tituloDos {
-    color: brown;
-    font-size: 3.2rem;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 1%;
-    padding: 1%;
-    text-align: center;
-}
-
-.escucharDos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto 15%;
-}
-
-@media screen and (max-width:700px) {
-    .escucharDos {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: auto;
-    }
-}
-
-/* Main Galería */
-
-.iframe {
-    margin: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.galeriaUno {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto 15%;
-    flex-wrap: wrap;
-}
-
-.imgGaleria {
-    height: 20rem;
-    width: 30rem;
-    margin: 2%;
-}
-
-/* Main Merch */
-
-.gizzverse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto 10%;
-}
-
-.imgGizzverse {
-    max-width: 50rem;
+@media screen and (max-width: 500px) {
+  .redes-logo {
+    width: 2.8rem;
     transition: all 0.5s ease;
+  }
+  .redes-logo:hover {
+    width: 3.8rem;
+  }
+}
+.titulo-alt {
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #000;
+  background-color: #a52a2a;
+  margin: 2rem 0;
 }
 
-.imgGizzverse:hover {
-    max-width: 53rem;
+.titulo-dos {
+  color: #a52a2a;
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
 }
 
-.merchCont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto 10%;
-    flex-wrap: wrap;
+.escuchar-uno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
 }
 
-.imgVinil {
-    height: 27rem;
-    width: 27rem;
-    border-radius: 10%;
-    margin: 2rem;
-    transition: all 0.5s ease;
-    border: 5px solid black;
+.escuchar-dos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto 15%;
 }
 
-.imgVinil:hover {
-height: 28rem;
-width: 28rem;
-border-color: brown;
-}
-
-.imgRopa {
-    height: 38rem;
-    width: 27rem;
-    border-radius: 10%;
-    margin: 2rem;
-    transition: all 0.5s ease;
-    border: solid 5px black;
-}
-
-.imgRopa:hover {
-    height:39rem;
-    width: 28rem;
-    border-color: brown;
-}
-
-/* Main Tour */
-
-.tourCont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 700px) {
+  .escuchar-dos {
+    flex-direction: column;
     margin: auto;
+  }
+}
+.cont-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 15%;
+  flex-wrap: wrap;
+}
+.cont-galeria-img {
+  width: 30rem;
+  height: 20rem;
+  margin: 2%;
 }
 
-.imgTour {
-    max-width: 150rem;
-    margin: 10rem 0 0 0;
+.cont-gizzverse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10%;
+}
+.cont-gizzverse-img {
+  max-width: 50rem;
+  transition: all 0.5s ease;
+}
+.cont-gizzverse-img:hover {
+  max-width: 53rem;
 }
 
-.fechasCont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+.cont-merch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10%;
+  flex-wrap: wrap;
 }
-.fechasTour {
-    color: brown;
-    font-size: 2rem;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 2rem;
-    text-align: center;
+.cont-merch-vinil {
+  width: 27rem;
+  border-radius: 10%;
+  margin: 2rem;
+  border: 5px solid black;
+  transition: all 0.5s ease;
 }
-
-.tickets {
-    background-color: #66b814;
-    color: black;
-    font-size: 1.8rem;
-    text-decoration: none;
-    border-radius: 15px;
-    margin: 1rem;
-    border: solid brown 3px; 
-    transition: all 0.5s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 7rem;
-    height: 4rem;
+.cont-merch-vinil:hover {
+  width: 28rem;
+  border-color: brown;
 }
-
-.tickets:hover {
-    font-size: 2.8;
-    width: 8rem;
-    height: 5rem;
-    border-radius: 20px;
+.cont-merch-ropa {
+  width: 27rem;
+  height: 39rem;
+  border-radius: 10%;
+  margin: 2rem;
+  border: solid 5px black;
+  transition: all 0.5s ease;
+}
+.cont-merch-ropa:hover {
+  width: 28rem;
+  height: 40rem;
+  border-color: brown;
 }
 
-/* Footer */
-
-footer {
-    background-color: brown;
-    margin-top: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 25rem;
+.cont-tour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-.boxFooter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1.5rem;
-    gap: 25%;
-    width: 100%;
-    flex-wrap: wrap;
-
+.cont-tour-img {
+  max-width: 150rem;
+  margin: 10rem 0 0 0;
 }
 
-.parrafoFooter {
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    
+.cont-fechas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cont-fechas-parrafo {
+  color: #a52a2a;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+.cont-fechas-tickets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #66b814;
+  color: #000;
+  font-size: 2rem;
+  border-radius: 15px;
+  margin: 1rem;
+  border: solid brown 3px;
+  width: 7rem;
+  height: 4rem;
+  transition: all 0.5s ease;
+}
+.cont-fechas-tickets:hover {
+  width: 8rem;
+  height: 5rem;
+  border-radius: 20px;
 }
 
-.redes {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-
-}
-
-.logo {
-    width: 4rem;
-    height: 4rem;
-    margin: 1rem;
-    transition: all 0.5s ease;
-}
-
-.logo:hover {
-    width: 5rem;
-    height: 5rem;
-}
-
-@media screen and (max-width:500px) {
-    .logo {
-        width: 2.8rem;
-        height: 2.8rem;
-        margin: 1rem;
-        transition: all 0.5s ease;
-    }
-    .logo:hover {
-        width: 3.8rem;
-        height: 3.8rem;
-    }
-}
-
-
-
+/*# sourceMappingURL=styles.css.map */

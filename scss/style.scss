@@ -1,0 +1,12 @@
+@import "./utilities/variables";
+@import "./base/reset";
+@import "./utilities/mixins";
+
+
+//views
+
+@import "./views/inicio";
+@import "./views/escuchar";
+@import "./views/galeria";
+@import "./views/merch";
+@import "./views/tour";

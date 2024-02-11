@@ -1,0 +1,122 @@
+// Header
+
+.cont-menu {
+    @include flex(null, center, center, 7%);
+    background-color: $color-secundario;
+    flex-wrap: wrap;    
+}
+
+.menu-style {
+    @include flex(null, end, center,0)
+}
+
+.menu-img {
+    width: 17%;
+}
+
+.menu-items {
+    @include flex(null, space-between, center, 5rem);
+    padding: .5rem;
+    flex-wrap: wrap;
+}
+
+.style-item {
+    background-color: $color-secundario;
+    color: black;
+    font-size: $font-m;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-bottom: 3px solid brown;
+    transition: all 0.5s ease;
+    margin: 1rem;
+}
+
+.style-item:hover  {
+    border-color: black;
+}
+
+.titulo {
+    @include titulo;
+    margin: 10rem 0 2rem 0;
+}
+
+//Main
+
+.cont-main {
+    @include flex-center;
+    max-width: 960px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+
+    &-parrafo {
+        font-size: $font-l;
+        color: $font-color-secundario;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 2%;
+    }
+
+    &-img {
+        max-width: 450px;
+        margin: 2rem;
+        flex-direction: column;
+    }
+}
+
+//Footer
+
+.cont-footer {
+    @include flex (null, center, center, 0);
+    background-color: $color-secundario;
+    width: 100%;
+    height: 25rem;
+    margin-top: 6rem;
+}
+
+.cont-footer-items {
+    @include flex (null, center, center, 7rem);
+    margin: 1.5rem;
+    gap: 25%;
+    width: 100%;
+    flex-wrap: wrap;
+
+    &-parrafo {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: $font-s;
+        color: $font-color-principal;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &-redes {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+}
+
+.redes-logo {
+    width: 4rem;
+    margin: 1rem;
+    transition: all 0.5s ease;
+}
+.redes-logo:hover {
+    width: 5rem;
+}
+
+//Media queries
+
+@media screen and (max-width: 890px) {
+    .cont-main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .redes-logo {
+        width: 2.8rem;
+        transition: all 0.5s ease;
+    }
+
+    .redes-logo:hover {
+        width: 3.8rem;
+    }
+}

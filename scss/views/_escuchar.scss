@@ -1,0 +1,35 @@
+//Escuchar Main
+
+.titulo-alt {
+    @include titulo;
+    margin: 2rem 0;
+}
+
+.titulo-dos {
+    color: $font-color-secundario;
+    font-size: $font-xl;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+}
+
+.escuchar-uno {
+    @include flex-center;
+    margin: 2rem;
+}
+
+.escuchar-dos {
+    @include flex-center;
+    flex-wrap: wrap;
+    margin: auto 15%;
+}
+
+//Media Queries
+
+@media screen and (max-width: 700px) {
+    .escuchar-dos {
+        flex-direction: column;
+        margin: auto;
+    }
+}

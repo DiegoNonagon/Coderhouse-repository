@@ -1,0 +1,43 @@
+// Tour Main
+
+.cont-tour {
+    @include flex-center;
+    margin: auto;
+
+    &-img {
+        max-width: 150rem;
+        margin: 10rem 0 0 0;
+    }
+}
+
+.cont-fechas {
+    @include flex-center;
+    flex-direction: column;
+
+    &-parrafo {
+        color: $font-color-secundario;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: $font-l;
+        margin: 2rem;
+        text-align: center;
+    }
+
+    &-tickets {
+        @include flex-center;
+        background-color: #66b814;
+        color: $font-color-principal;
+        font-size: $font-l;
+        border-radius: 15px;
+        margin: 1rem;
+        border: solid brown 3px;
+        width: 7rem;
+        height: 4rem;
+        transition: all 0.5s ease;
+    }
+
+    &-tickets:hover {
+        width: 8rem;
+        height: 5rem;
+        border-radius: 20px;
+    }
+}

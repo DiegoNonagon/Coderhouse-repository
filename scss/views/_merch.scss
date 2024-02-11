@@ -1,0 +1,49 @@
+//Merch Main
+
+.cont-gizzverse {
+    @include flex-center;
+    margin: auto 10%;
+
+    &-img {
+        max-width: 50rem;
+        transition: all 0.5s ease;
+    }
+
+    &-img:hover {
+        max-width: 53rem;
+    }
+}
+
+.cont-merch {
+    @include flex-center;
+    margin: auto 10%;
+    flex-wrap: wrap;
+
+    &-vinil {
+        width: 27rem;
+        border-radius: 10%;
+        margin: 2rem;
+        border: 5px solid black;
+        transition: all 0.5s ease;
+    }
+
+    &-vinil:hover {
+        width: 28rem;
+        border-color: brown;
+    }
+
+    &-ropa {
+        width: 27rem;
+        height: 39rem;
+        border-radius: 10%;
+        margin: 2rem;
+        border: solid 5px black;
+        transition: all 0.5s ease;
+    }
+
+    &-ropa:hover {
+        width: 28rem;
+        height: 40rem;
+        border-color: brown;
+    }
+}
