@@ -2,7 +2,7 @@
 
 .cont-menu {
     @include flex(null, center, center, 7%);
-    background-color: $color-secundario;
+    background-image: linear-gradient(to left, brown, rgb(107, 2, 23));
     flex-wrap: wrap;    
 }
 
@@ -21,18 +21,16 @@
 }
 
 .style-item {
-    background-color: $color-secundario;
-    color: black;
+    color: $font-color-principal;
     font-size: $font-m;
     font-weight: bold;
     font-family: sans-serif;
-    border-bottom: 3px solid brown;
     transition: all 0.5s ease;
     margin: 1rem;
 }
 
 .style-item:hover  {
-    border-color: black;
+    color: $font-color-terciario;
 }
 
 .titulo {
@@ -62,11 +60,44 @@
     }
 }
 
+//Sección
+
+.cont-cards {
+    @include flex (null, center, center, 3%);
+    margin: 3% 10%;
+    flex-wrap: wrap
+}
+
+.card {
+    background-image: linear-gradient(to left, brown, rgb(107, 2, 23));
+    border: solid 2px $font-color-secundario;
+    width: 25rem;
+    margin: 2rem;
+    transition: all 0.5s ease;
+
+    &-titulo {
+        font-size: $font-l;
+        color: $font-color-principal;
+    }
+
+    &-parrafo {
+        font-size: $font-m;
+        font-family: 'Times New Roman', Times, serif;
+        color: $font-color-principal;
+    }
+}
+
+.card:hover {
+    background-color: $color-terciario;
+    border: solid 2px $color-terciario;
+    width: 28rem;
+}
+
 //Footer
 
 .cont-footer {
     @include flex (null, center, center, 0);
-    background-color: $color-secundario;
+    background-image: linear-gradient(to right, brown, rgb(107, 2, 23));
     width: 100%;
     height: 25rem;
     margin-top: 6rem;
