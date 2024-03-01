@@ -72,6 +72,7 @@
     background-image: linear-gradient(to left, brown, rgb(107, 2, 23));
     border: solid 2px $font-color-secundario;
     width: 25rem;
+    min-height: 50rem;
     margin: 2rem;
     transition: all 0.5s ease;
 
@@ -110,18 +111,18 @@
     width: 100%;
     flex-wrap: wrap;
 
-    &-parrafo {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: $font-s;
-        color: $font-color-principal;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
     &-redes {
         gap: 1rem;
         margin-top: 1.5rem;
     }
+}
+
+.items-parrafo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: $font-s;
+    color: $font-color-principal;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .redes-logo {
