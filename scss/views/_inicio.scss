@@ -60,6 +60,28 @@
     }
 }
 
+.cont-main2 {
+    @include flex-center;
+    max-width: 960px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+
+    &-parrafo {
+        font-size: $font-m;
+        color: $font-color-secundario;
+        font-family: "Kode Mono", monospace;
+        margin: 2%;
+    }
+
+    &-img {
+        max-width: 450px;
+        margin: 2rem;
+        flex-direction: column;
+    }
+
+
+}
+
 //Sección
 
 .cont-cards {
@@ -147,6 +169,10 @@
 @media screen and (max-width: 890px) {
     .cont-main {
         flex-direction: column;
+    }
+
+    .cont-main2 {
+    flex-direction: column-reverse;
     }
 }
 

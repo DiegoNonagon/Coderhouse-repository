@@ -106,6 +106,26 @@ img {
   flex-direction: column;
 }
 
+.cont-main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+.cont-main2-parrafo {
+  font-size: 1.6rem;
+  color: #a52a2a;
+  font-family: "Kode Mono", monospace;
+  margin: 2%;
+}
+.cont-main2-img {
+  max-width: 450px;
+  margin: 2rem;
+  flex-direction: column;
+}
+
 .cont-cards {
   display: flex;
   justify-content: center;
@@ -192,6 +212,9 @@ img {
 @media screen and (max-width: 890px) {
   .cont-main {
     flex-direction: column;
+  }
+  .cont-main2 {
+    flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 500px) {
