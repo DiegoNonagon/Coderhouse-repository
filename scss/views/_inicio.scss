@@ -24,7 +24,7 @@
     color: $font-color-principal;
     font-size: $font-m;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: "Anta", sans-serif;
     transition: all 0.5s ease;
     margin: 1rem;
 }
@@ -47,9 +47,9 @@
     padding: 0 1.5rem;
 
     &-parrafo {
-        font-size: $font-l;
+        font-size: $font-m;
         color: $font-color-secundario;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: "Kode Mono", monospace;
         margin: 2%;
     }
 
@@ -73,25 +73,32 @@
     border: solid 2px $font-color-secundario;
     width: 25rem;
     min-height: 50rem;
-    margin: 2rem;
-    transition: all 0.5s ease;
+    margin: 1rem;
+    transition: all 0.8s ease;
+
+    &-img-top {
+        max-width: 24.7rem;
+        height: 35rem;
+    }
 
     &-titulo {
         font-size: $font-l;
         color: $font-color-principal;
+        font-family: "Anta", sans-serif;
+        border-bottom: 2px solid $color-principal;
     }
 
     &-parrafo {
         font-size: $font-m;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: "Kode Mono", monospace;
         color: $font-color-principal;
     }
+
 }
 
 .card:hover {
-    background-color: $color-terciario;
-    border: solid 2px $color-terciario;
-    width: 28rem;
+    border-color: $color-terciario;
+    background-image: linear-gradient(to right, rgb(5, 249, 5), rgb(2, 130, 2));
 }
 
 //Footer
@@ -100,7 +107,7 @@
     @include flex (null, center, center, 0);
     background-image: linear-gradient(to right, brown, rgb(107, 2, 23));
     width: 100%;
-    height: 25rem;
+    height: 20rem;
     margin-top: 6rem;
 }
 
@@ -118,7 +125,7 @@
 }
 
 .items-parrafo {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Anta", sans-serif;
     font-size: $font-s;
     color: $font-color-principal;
     flex-direction: column;
@@ -132,6 +139,7 @@
 }
 .redes-logo:hover {
     width: 5rem;
+    margin: 0.5rem;
 }
 
 //Media queries
@@ -150,5 +158,9 @@
 
     .redes-logo:hover {
         width: 3.8rem;
+    }
+
+    .cont-cards {
+        margin: 3% 5%;
     }
 }

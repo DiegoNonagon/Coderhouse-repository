@@ -8,7 +8,7 @@
 .titulo-dos {
     color: $font-color-terciario;
     font-size: $font-xl;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Kode Mono", monospace;
     margin: 1%;
     padding: 1%;
     text-align: center;
@@ -31,5 +31,6 @@
     .escuchar-dos {
         flex-direction: column;
         margin: auto;
+        gap: 2rem;
     }
 }

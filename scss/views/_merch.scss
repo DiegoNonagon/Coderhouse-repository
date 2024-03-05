@@ -30,12 +30,13 @@
     &-vinil:hover {
         width: 28rem;
         border-color: $color-secundario;
+        margin: 1.5rem;
     }
 
     &-ropa {
         width: 27rem;
         height: 39rem;
-        border-radius: 10%;
+        border-radius: 15px;
         margin: 2rem;
         border: solid 5px $color-principal;
         transition: all 0.5s ease;
@@ -45,5 +46,6 @@
         width: 28rem;
         height: 40rem;
         border-color: $color-secundario;
+        margin: 1.5rem;
     }
 }
