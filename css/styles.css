@@ -398,5 +398,8 @@ img {
   height: 4rem;
   transition: all 0.5s ease;
 }
+.cont-fechas-tickets:hover {
+  background-color: rgb(62, 167, 6);
+}
 
 /*# sourceMappingURL=styles.css.map */

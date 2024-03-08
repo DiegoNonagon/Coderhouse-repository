@@ -36,4 +36,10 @@
         height: 4rem;
         transition: all 0.5s ease;
     }
+
+    &-tickets:hover {
+        background-color: rgb(62, 167, 6);
+        
+    }
+
 }
