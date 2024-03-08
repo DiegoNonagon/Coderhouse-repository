@@ -9,7 +9,8 @@ html {
 }
 
 body {
-    background-color: black;
+    background: rgb(37,9,9);
+    background: radial-gradient(circle, rgba(37,9,9,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 a {
